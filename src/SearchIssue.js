@@ -28,14 +28,23 @@ const styles = theme => ({
 });
 
 class SearchIssue extends Component {
-    state = {
-        issues: [],
-        searchString: ''
-    }
+    // state = {
+    //     issues: [],
+    //     searchString: ''
+    // }
 
     constructor(){
         super()
-        this.getIssues()
+        //this is wrong, shouldn't make API calls in the constructor
+        // this.getIssues()
+        this.state = {
+            issues: [],
+            searchString: ''
+        }
+    }
+
+    componentDidMount(){
+        this.getIssues();
     }
 
     getIssues = () => {
