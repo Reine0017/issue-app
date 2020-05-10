@@ -108,6 +108,8 @@ class SearchIssue extends Component {
 }
 export default withStyles(styles)(SearchIssue);
 
+
+// not sure how to make it functional based
 // const useStyles = makeStyles((theme) => ({
 //     notchedOutline: {
 //         borderWidth: "1px",
